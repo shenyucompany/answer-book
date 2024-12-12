@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text', serif;
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes floatingStars {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: floatingStars 3s infinite;
+} 
